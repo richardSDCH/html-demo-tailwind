@@ -14,6 +14,13 @@ module.exports = {
         'network-hover': "url(../src/images/Network-Hover.png)",
         'trade-hover': "url(../src/images/Trade-Hover.png)",
         'manage-hover': "url(../src/images/Manage-Hover.png)",
+        'arrow-down': "url(../src/images/arrow-down.svg)",
+      },
+      backgroundSize: {
+        '4': '2rem',
+      },
+      backgroundPosition: {
+        'right-2': 'right 0.65rem center',
       }
     },
   },
