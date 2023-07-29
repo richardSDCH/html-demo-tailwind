@@ -21,6 +21,19 @@ module.exports = {
       },
       backgroundPosition: {
         'right-2': 'right 0.65rem center',
+      },
+      gridTemplateRows: {
+        '8': 'repeat(8, minmax(0, 1fr))',
+        '9': 'repeat(9, minmax(0, 1fr))',
+      },
+      gridRowEnd: {
+        '9': '9',
+        '10': '10',
+      },
+      colors: {
+        'negotiating': '#F38452',
+        'executing': '#8BE11A',
+        'completed': '#01A7FF',
       }
     },
   },
