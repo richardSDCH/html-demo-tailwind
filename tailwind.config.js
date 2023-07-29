@@ -34,6 +34,11 @@ module.exports = {
         'negotiating': '#F38452',
         'executing': '#8BE11A',
         'completed': '#01A7FF',
+      },
+      width: {
+        '19/20': '95%',
+        '224': '56rem',
+        '223': '55.75rem',
       }
     },
   },

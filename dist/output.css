@@ -542,6 +542,14 @@ video {
   grid-column: span 10 / span 10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
 .col-start-3 {
   grid-column-start: 3;
 }
@@ -578,12 +586,20 @@ video {
   grid-row-end: 9;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
 
 .ml-16 {
   margin-left: 4rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
 }
 
 .ml-4 {
@@ -610,6 +626,14 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -630,12 +654,20 @@ video {
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-32 {
   height: 8rem;
 }
 
 .h-7 {
   height: 1.75rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .h-full {
@@ -654,8 +686,24 @@ video {
   width: 2.5rem;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-2\/5 {
   width: 40%;
+}
+
+.w-223 {
+  width: 55.75rem;
+}
+
+.w-224 {
+  width: 56rem;
 }
 
 .w-40 {
@@ -676,6 +724,10 @@ video {
 
 .w-8\/12 {
   width: 66.666667%;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .w-full {
@@ -714,6 +766,10 @@ video {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -734,6 +790,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -742,8 +802,21 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-green-400 {
@@ -756,9 +829,9 @@ video {
   border-color: rgb(225 29 72 / var(--tw-border-opacity));
 }
 
-.border-rose-900 {
+.border-slate-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(136 19 55 / var(--tw-border-opacity));
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
 }
 
 .border-slate-500 {
@@ -776,9 +849,19 @@ video {
   border-color: rgb(124 58 237 / var(--tw-border-opacity));
 }
 
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+.bg-completed {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 167 255 / var(--tw-bg-opacity));
+}
+
+.bg-executing {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 225 26 / var(--tw-bg-opacity));
+}
+
+.bg-negotiating {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 132 82 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -842,13 +925,26 @@ video {
   text-align: left;
 }
 
+.indent-14 {
+  text-indent: 3.5rem;
+}
+
 .indent-4 {
   text-indent: 1rem;
+}
+
+.indent-12 {
+  text-indent: 3rem;
 }
 
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -863,26 +959,6 @@ video {
   font-weight: 600;
 }
 
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
-}
-
-.text-orange-600 {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
-}
-
 .text-completed {
   --tw-text-opacity: 1;
   color: rgb(1 167 255 / var(--tw-text-opacity));
@@ -893,14 +969,36 @@ video {
   color: rgb(139 225 26 / var(--tw-text-opacity));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .text-negotiating {
   --tw-text-opacity: 1;
   color: rgb(243 132 82 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:bg-slate-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.active\:w-223:active {
+  width: 55.75rem;
+}
+
+.active\:w-224:active {
+  width: 56rem;
+}
+
+.active\:border-2:active {
+  border-width: 2px;
 }
 
 .group:hover .group-hover\:bg-home-hover {
