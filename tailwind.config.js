@@ -24,6 +24,7 @@ module.exports = {
         'right-2': 'right 0.65rem center',
       },
       gridTemplateRows: {
+        '7': 'repeat(7, minmax(0, 1fr))',
         '8': 'repeat(8, minmax(0, 1fr))',
         '9': 'repeat(9, minmax(0, 1fr))',
       },
@@ -39,16 +40,36 @@ module.exports = {
         'exporter': '#A8ADFF',
         'supplier': '#0091A2',
         'customer': '#FFAD00',
+        'orangered': '#ff4500',
       },
       backgroundColor: {
         'btn-default': 'rgba(0, 208, 215, 0.4)',
         'btn-hover': 'rgba(0, 208, 215, 0.7)',
         'btn-active': 'rgba(0, 208, 215)',
+        'btn-disabled': 'rgba(0, 208, 215, 0.2)',
+        'radio-btn-disabled': 'rgba(255, 69, 0, 0.65)',
       },
       width: {
+        '4.5': '1.125rem;', /* 18px */
         '19/20': '95%',
+        '3/10': '30%',
+        '58': '14.5rem;', /* 224px */
         '224': '56rem',
         '223': '55.75rem',
+      },
+      height: {
+        '4.5': '1.125rem;', /* 18px */
+        '1/10': '10%',
+        '9/10': '90%',
+        '19/20': '95%',
+      },
+      margin: {
+        'neg-3.5': '-0.875rem;', /* -14px */
+        'neg-3.75': '-0.9375rem;', /* -15px */
+        'neg-4': '-1rem;', /* -16px */
+      },
+      borderWidth: {
+        '3': '3px;',
       }
     },
   },
