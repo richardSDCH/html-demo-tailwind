@@ -9,7 +9,7 @@
 <body>
     <div class="grid grid-cols-12 grid-rows-9 gap-1.5 w-screen h-screen">
         <div id="sidebar" class="fixed w-1/5">
-            <div id="tradeledge-logo" class="ml-8 mt-3">
+            <div id="tradeledge-logo" class="ml-8 mt-6">
                 <img class="w-40" src="./images/Tradeledge_logo_lightBackground.png" alt="logo">
             </div>
             <div id="menu-section" class="ml-16 mt-10">
@@ -49,12 +49,12 @@
                 <div id="nav-items" class="w-2/5 flex justify-end items-center">
                     <div id="ellipse" class="flex w-10 h-10 bg-slate-100 rounded-full"><img src="./images/Bell.png" alt="Bell icon"></div>
                     <img id="nav-firm-logo" class="w-10 h-10 rounded-full ml-10 border border-solid border-slate-500" src="./images/logo-coffee-company-2.png" alt="logo">
-                    <button class="ml-5 mr-5 bg-arrow-down w-52 h-12 rounded-2xl text-left indent-4 bg-no-repeat bg-right-2 bg-4 hover:bg-slate-100" id="profile-menu-btn">Johannes Schwarz</button>
+                    <button class="ml-5 mr-5 bg-arrow-down w-52 h-12 rounded-xl text-left indent-4 bg-no-repeat bg-right-2 bg-4 hover:bg-slate-100" id="profile-menu-btn">Johannes Schwarz</button>
                 </div>
         </div>
         <div id="home-space" class="row-start-2 row-end-10 col-start-3 col-end-13 border border-solid border-violet-600">
             <div id="working-space" class="grid grid-cols-10 grid-rows-8 gap-1.5 w-full h-full">
-                <div id="heading" class="row-start-1 row-end-3 col-span-10 flex justify-evenly items-center border border-solid border-rose-600">
+                <div id="heading" class="row-start-1 row-end-3 col-span-9 flex justify-evenly items-center border border-solid border-rose-600">
                     <div id="indicator-card--negotiating" class="w-44 h-32 bg-slate-100 rounded-xl flex flex-col items-center">
                         <div id="indicator-card__blank" class="h-1/3"></div>
                         <div id="indicator-card__num" class="h-1/3 w-8/12 text-2xl font-bold flex items-center">12</div>
@@ -77,30 +77,30 @@
                     </div>
                 </div>
                 <div id="working-space-body" class="row-start-3 row-end-9 col-span-10 border border-solid border-teal-200">
-                    <h3 id="info-title" class="font-semibold text-xl ml-24 mt-4">Transactions</h3>
-                    <div id="list-of-transactions" class="w-10/12 ml-24 mt-4 flex flex-col items-center border-t border-slate-400">
-                        <a href="#" id="item" class="w-223 h-16 mt-6 mb-1 grid grid-cols-12 rounded-xl hover:bg-slate-100 active:w-224 active:border-2 border-black">
+                    <h3 id="info-title" class="font-semibold text-xl ml-20 mt-4">Transactions</h3>
+                    <div id="list-of-transactions" class="w-10/12 h-5/6 ml-20 mt-4 border-t border-slate-400">
+                        <a href="#" id="item" class="w-223 h-16 mt-6 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
                             <div id="firm" class="col-span-4 flex items-center indent-12">Nomad Trading SL</div>
                             <div id="product" class="col-span-2 flex items-center">Coffee beans</div>
                             <div id="quantity" class="col-span-2 flex items-center">30 bags</div>
                             <div id="price" class="col-span-2 flex items-center">$15,123.15</div>
                             <div id="status" class="col-span-2 flex items-center"><div class="bg-negotiating h-9 w-9/12 flex justify-center items-center font-medium text-white rounded-lg">Negotiating</div></div>
                         </a>
-                        <a href="#" id="item" class="w-223 h-16 mb-1 grid grid-cols-12 rounded-xl hover:bg-slate-100 active:w-224 active:border-2 border-black">
-                            <div id="firm" class="col-span-4 flex items-center indent-12">Rockbern Imports Ltd</div>
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
+                            <div id="firm" class="col-span-4 flex items-center indent-12">Rockbern Coffee Ltd</div>
                             <div id="product" class="col-span-2 flex items-center">Cocoa beans</div>
                             <div id="quantity" class="col-span-2 flex items-center">500 kgs</div>
                             <div id="price" class="col-span-2 flex items-center">$1,375.00</div>
                             <div id="status" class="col-span-2 flex items-center"><div class="bg-executing h-9 w-9/12 flex justify-center items-center font-medium text-white rounded-lg">Executing</div></div>
                         </a>
-                        <a href="#" id="item" class="w-223 h-16 mb-1 grid grid-cols-12 rounded-xl hover:bg-slate-100 active:w-224 active:border-2 border-black">
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
                             <div id="firm" class="col-span-4 flex items-center indent-12">Tracon Trading PLC</div>
                             <div id="product" class="col-span-2 flex items-center">Cinnamon</div>
                             <div id="quantity" class="col-span-2 flex items-center">320 lbs</div>
                             <div id="price" class="col-span-2 flex items-center">$3,200.00</div>
                             <div id="status" class="col-span-2 flex items-center"><div class="bg-completed h-9 w-9/12 flex justify-center items-center font-medium text-white rounded-lg">Completed</div></div>
                         </a>
-                        <a href="#" id="item" class="w-223 h-16 mb-1 grid grid-cols-12 rounded-xl hover:bg-slate-100 active:w-224 active:border-2 border-black">
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
                             <div id="firm" class="col-span-4 flex items-center indent-12">Hanseatic Coffee GmbH</div>
                             <div id="product" class="col-span-2 flex items-center">Coffee beans</div>
                             <div id="quantity" class="col-span-2 flex items-center">200 kgs</div>

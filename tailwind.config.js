@@ -17,6 +17,7 @@ module.exports = {
         'arrow-down': "url(../src/images/arrow-down.svg)",
       },
       backgroundSize: {
+        '3': '1.5rem',
         '4': '2rem',
       },
       backgroundPosition: {
@@ -34,6 +35,15 @@ module.exports = {
         'negotiating': '#F38452',
         'executing': '#8BE11A',
         'completed': '#01A7FF',
+        'importer': '#FF7E79',
+        'exporter': '#A8ADFF',
+        'supplier': '#0091A2',
+        'customer': '#FFAD00',
+      },
+      backgroundColor: {
+        'btn-default': 'rgba(0, 208, 215, 0.4)',
+        'btn-hover': 'rgba(0, 208, 215, 0.7)',
+        'btn-active': 'rgba(0, 208, 215)',
       },
       width: {
         '19/20': '95%',
