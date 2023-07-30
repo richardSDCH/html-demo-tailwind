@@ -71,20 +71,25 @@
                     <div id="negotiation-table" class="h-19/20 w-10/12">
                         <div id="table-tabs" class="h-1/10 w-full">
                             <div id="table-tab--product" class="w-58 h-full text-center text-white inline-block relative z-30 bg-blue-800 border border-slate-700 rounded-t-xl"><h5 class="font-semibold mt-3">Product</h5></div>
-                            <div id="table-tab--delivery" class="w-58 h-full text-center text-slate-700 inline-block relative ml-neg-3.75 z-20 bg-white border border-slate-700 rounded-t-xl"><h5 class="font-semibold mt-3">Delivery</h5></div>
-                            <div id="table-tab--price" class="w-58 h-full text-center text-slate-700 inline-block relative ml-neg-3.5 bg-white border z-10 border-slate-700 rounded-t-xl"><h5 class="font-semibold mt-3">Price</h5></div>
-                            <div id="table-tab--payment" class="w-58 h-full text-center text-slate-700 inline-block relative ml-neg-3.5 bg-white border z-0 border-slate-700 rounded-t-xl"><h5 class="font-semibold mt-3">Payment</h5></div>
+                            <div id="table-tab--delivery" class="w-58 h-full text-center text-slate-700 inline-block relative ml-neg-3.75 z-20 bg-white border border-slate-700 rounded-t-xl hover:bg-slate-100 hover:cursor-pointer"><h5 class="font-semibold mt-3">Delivery</h5></div>
+                            <div id="table-tab--price" class="w-58 h-full text-center text-slate-700 inline-block relative ml-neg-3.5 bg-white border z-10 border-slate-700 rounded-t-xl hover:bg-slate-100 hover:cursor-pointer"><h5 class="font-semibold mt-3">Price</h5></div>
+                            <div id="table-tab--payment" class="w-58 h-full text-center text-slate-700 inline-block relative ml-neg-3.5 bg-white border z-0 border-slate-700 rounded-t-xl hover:bg-slate-100 hover:cursor-pointer"><h5 class="font-semibold mt-3">Payment</h5></div>
                         </div>
                         <div id="table-space" class="h-9/10 w-full bg-slate-100 flex items-center border border-slate-700 border-t-0 rounded-b-xl">
-                            <div id="parameters-space" class="w-full h-9/10 grid grid-cols-12 grid-rows-6">
+                            <div id="parameters-space" class="w-full h-19/20 grid grid-cols-12 grid-rows-6">
 
-                                <div id="parameters--row1" class="row-start-1 col-span-9 border border-rose-800">Row1</div>
+                                <div id="parameters--row1" class="row-start-1 col-span-9 border border-rose-800"></div>
                                 <div id="logos" class="row-start-1 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
                                     <img src="./images/Tracon.png" alt="logo" class="w-10 h-10 rounded-full border border-slate-500">
                                     <img src="./images/logo-coffee-company-2.png" alt="logo" class="w-10 h-10 rounded-full border border-slate-500">
                                 </div>
 
-                                <div id="parameters--row2" class="row-start-2 col-span-9 border border-rose-800">Row2</div>
+                                <div id="parameters--row2" class="row-start-2 col-span-9 flex items-start border border-rose-800">
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-6">Product</h6>
+                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                    </div>
+                                </div>
                                 <div id="radio-btns--row2" class="row-start-2 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
                                     <label class="relative cursor-pointer select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
@@ -96,7 +101,26 @@
                                     </label>
                                 </div>
                                 
-                                <div id="parameters--row3" class="row-start-3 col-span-9 border border-rose-800">Row3</div>
+                                <div id="parameters--row3" class="row-start-3 col-span-9 flex items-start border border-rose-800">
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-6">Quantity</h6>
+                                        <input type="number" class="w-24 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0">
+                                    </div>
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-14">Units</h6>
+                                        <select name="units" id="units" class="h-10 w-24 ml-12 text-sm bg-white rounded-xl indent-2 appearance-none bg-arrow-down bg-no-repeat bg-3 bg-right-2 box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500">
+                                            <option value="kgs">kgs</option>
+                                            <option value="lbs">lbs</option>
+                                            <option value="tns">tns</option>
+                                            <option value="bags">bags</option>
+                                            <option value="liters">liters</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-14">Tolerance %</h6>
+                                        <input type="number" class="w-24 h-10 rounded-xl ml-12 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0">
+                                    </div>
+                                </div>
                                 <div id="radio-btns--row3" class="row-start-3 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
                                     <label class="relative cursor-pointer select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
@@ -108,7 +132,12 @@
                                     </label>
                                 </div>
                                 
-                                <div id="parameters--row4" class="row-start-4 col-span-9 border border-rose-800">Row4</div>
+                                <div id="parameters--row4" class="row-start-4 col-span-9 flex items-start border border-rose-800">
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-6">Packaging</h6>
+                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                    </div>
+                                </div>
                                 <div id="radio-btns--row4" class="row-start-4 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
                                     <label class="relative cursor-pointer select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
@@ -120,7 +149,19 @@
                                     </label>
                                 </div>
                                 
-                                <div id="parameters--row5" class="row-start-5 col-span-9 border border-rose-800">Row5</div>
+                                <div id="parameters--row5" class="row-start-5 col-span-9 flex items-center border border-rose-800">
+                                    <h6 class="text-sm mb-1 ml-6">Inspection required</h6>
+                                    <div id="toggle-switch" class="w-40 h-9/10 ml-8 flex justify-evenly items-center">
+                                        <h3 class="font-semibold text-base">NO</h3>
+                                        <label class="relative inline-block w-9 h-5 border-2 border-slate-400 rounded-2xl">
+                                            <input type="checkbox" class="opacity-0 w-0 h-0 peer">
+                                            <span class="absolute cursor-pointer top-0 bottom-0 left-0 right-0 bg-orangered rounded-3xl duration-300 
+                                                    before:absolute before:content-[''] before:w-4 before:h-4 before:left-0 before:bottom-0 before:bg-white before:rounded-full before:duration-300
+                                                    peer-checked:bg-teal-500 peer-checked:before:translate-x-4"></span>
+                                        </label>
+                                        <h3 class="font-semibold text-base">YES</h3>
+                                    </div>
+                                </div>
                                 <div id="radio-btns--row5" class="row-start-5 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
                                     <label class="relative cursor-pointer select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
@@ -132,7 +173,12 @@
                                     </label>
                                 </div>
                                 
-                                <div id="parameters--row6" class="row-start-6 col-span-9 border border-rose-800">Row6</div>
+                                <div id="parameters--row6" class="row-start-6 col-span-9 border border-rose-800">
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-6">Other specifications</h6>
+                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                    </div>
+                                </div>
                                 <div id="radio-btns--row6" class="row-start-6 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
                                     <label class="relative cursor-pointer select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
