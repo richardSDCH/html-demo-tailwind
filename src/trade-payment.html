@@ -78,19 +78,25 @@
                         <div id="table-space" class="h-9/10 w-full bg-slate-100 flex items-center border border-slate-700 border-t-0 rounded-b-xl">
                             <div id="parameters-space" class="w-full h-19/20 grid grid-cols-12 grid-rows-6">
 
-                                <div id="parameters--row1" class="row-start-1 col-span-9 border border-rose-800"></div>
-                                <div id="logos" class="row-start-1 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
+                                <div id="parameters--row1" class="row-start-1 col-span-9"></div>
+                                <div id="logos" class="row-start-1 col-start-10 col-span-3 flex justify-evenly items-center">
                                     <img src="./images/Tracon.png" alt="logo" class="w-10 h-10 rounded-full border border-slate-500">
                                     <img src="./images/logo-coffee-company-2.png" alt="logo" class="w-10 h-10 rounded-full border border-slate-500">
                                 </div>
 
-                                <div id="parameters--row2" class="row-start-2 col-span-9 flex items-start border border-rose-800">
+                                <div id="parameters--row2" class="row-start-2 col-span-9 flex items-start">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Product</h6>
-                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                        <h6 class="text-sm mb-1 ml-6">Payment terms</h6>
+                                        <select name="payment-terms" id="payment-terms" class="h-10 w-56 ml-6 text-sm bg-white rounded-xl indent-2 appearance-none bg-arrow-down bg-no-repeat bg-3 bg-right-2 box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500">
+                                            <option value="PA">Payment in Advance</option>
+                                            <option value="SLC">Standby Letter of Credit</option>
+                                            <option value="LC">Letter of Credit</option>
+                                            <option value="DC">Documentary Collection</option>
+                                            <option value="OA">Open Account</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div id="radio-btns--row2" class="row-start-2 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
+                                <div id="radio-btns--row2" class="row-start-2 col-start-10 col-span-3 flex justify-evenly items-center">
                                     <label class="relative select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
                                         <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-disabled:bg-radio-btn-disabled peer-disabled:outline-slate-300"></span>
@@ -101,27 +107,22 @@
                                     </label>
                                 </div>
                                 
-                                <div id="parameters--row3" class="row-start-3 col-span-9 flex items-start border border-rose-800">
+                                <div id="parameters--row3" class="row-start-3 col-span-9 flex items-start">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Quantity</h6>
+                                        <h6 class="text-sm mb-1 ml-6">Payment period</h6>
                                         <input type="number" class="w-24 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0">
                                     </div>
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-14">Units</h6>
-                                        <select name="units" id="units" class="h-10 w-24 ml-12 text-sm bg-white rounded-xl indent-2 appearance-none bg-arrow-down bg-no-repeat bg-3 bg-right-2 box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500">
-                                            <option value="kgs">kgs</option>
-                                            <option value="lbs">lbs</option>
-                                            <option value="tns">tns</option>
-                                            <option value="bags">bags</option>
-                                            <option value="liters">liters</option>
+                                        <h6 class="text-sm mb-1 ml-6">Time units</h6>
+                                        <select name="units" id="units" class="h-10 w-24 ml-6 text-sm bg-white rounded-xl indent-2 appearance-none bg-arrow-down bg-no-repeat bg-3 bg-right-2 box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500">
+                                            <option value="hours">hours</option>
+                                            <option value="days">days</option>
+                                            <option value="weeks">weeks</option>
+                                            <option value="months">months</option>
                                         </select>
                                     </div>
-                                    <div>
-                                        <h6 class="text-sm mb-1 ml-14">Tolerance %</h6>
-                                        <input type="number" class="w-24 h-10 rounded-xl ml-12 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0">
-                                    </div>
                                 </div>
-                                <div id="radio-btns--row3" class="row-start-3 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
+                                <div id="radio-btns--row3" class="row-start-3 col-start-10 col-span-3 flex justify-evenly items-center">
                                     <label class="relative select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
                                         <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-disabled:bg-radio-btn-disabled peer-disabled:outline-slate-300"></span>
@@ -132,13 +133,13 @@
                                     </label>
                                 </div>
                                 
-                                <div id="parameters--row4" class="row-start-4 col-span-9 flex items-start border border-rose-800">
+                                <div id="parameters--row4" class="row-start-4 col-span-9 flex items-start">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Packaging</h6>
+                                        <h6 class="text-sm mb-1 ml-6">Issuing Bank</h6>
                                         <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
                                     </div>
                                 </div>
-                                <div id="radio-btns--row4" class="row-start-4 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
+                                <div id="radio-btns--row4" class="row-start-4 col-start-10 col-span-3 flex justify-evenly items-center">
                                     <label class="relative select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
                                         <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-disabled:bg-radio-btn-disabled peer-disabled:outline-slate-300"></span>
@@ -149,37 +150,30 @@
                                     </label>
                                 </div>
                                 
-                                <div id="parameters--row5" class="row-start-5 col-span-9 flex items-center border border-rose-800">
-                                    <h6 class="text-sm mb-1 ml-6">Inspection required</h6>
-                                    <div id="toggle-switch" class="w-40 h-9/10 ml-8 flex justify-evenly items-center">
-                                        <h3 class="font-semibold text-base">NO</h3>
-                                        <label class="relative inline-block w-9 h-5 border-2 border-slate-400 rounded-2xl">
-                                            <input type="checkbox" class="opacity-0 w-0 h-0 peer">
-                                            <span class="absolute cursor-pointer top-0 bottom-0 left-0 right-0 bg-orangered rounded-3xl duration-300 
-                                                    before:absolute before:content-[''] before:w-4 before:h-4 before:left-0 before:bottom-0 before:bg-white before:rounded-full before:duration-300
-                                                    peer-checked:bg-teal-500 peer-checked:before:translate-x-4"></span>
-                                        </label>
-                                        <h3 class="font-semibold text-base">YES</h3>
-                                    </div>
-                                </div>
-                                <div id="radio-btns--row5" class="row-start-5 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
-                                    <label class="relative select-none w-8 h-8 flex justify-center items-center" >
-                                        <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
-                                        <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-disabled:bg-radio-btn-disabled peer-disabled:outline-slate-300"></span>
-                                    </label>
-                                    <label class="relative cursor-pointer select-none w-8 h-8 flex justify-center items-center">
-                                        <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer">
-                                        <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-checked:bg-teal-500"></span>
-                                    </label>
-                                </div>
-                                
-                                <div id="parameters--row6" class="row-start-6 col-span-9 border border-rose-800">
+                                <div id="parameters--row5" class="row-start-5 col-span-9 flex items-center">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Other specifications</h6>
+                                        <h6 class="text-sm mb-1 ml-6">Advising Bank</h6>
                                         <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
                                     </div>
                                 </div>
-                                <div id="radio-btns--row6" class="row-start-6 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
+                                <div id="radio-btns--row5" class="row-start-5 col-start-10 col-span-3 flex justify-evenly items-center">
+                                    <label class="relative select-none w-8 h-8 flex justify-center items-center" >
+                                        <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
+                                        <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-disabled:bg-radio-btn-disabled peer-disabled:outline-slate-300"></span>
+                                    </label>
+                                    <label class="relative cursor-pointer select-none w-8 h-8 flex justify-center items-center">
+                                        <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer">
+                                        <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-checked:bg-teal-500"></span>
+                                    </label>
+                                </div>
+                                
+                                <div id="parameters--row6" class="row-start-6 col-span-9">
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-6">Further details</h6>
+                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                    </div>
+                                </div>
+                                <div id="radio-btns--row6" class="row-start-6 col-start-10 col-span-3 flex justify-evenly items-center">
                                     <label class="relative select-none w-8 h-8 flex justify-center items-center" >
                                         <input type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0 peer" disabled>
                                         <span class="absolute w-6 h-6 bg-orangered rounded-full border-3 border-white outline outline-2 outline-slate-400 duration-200 hover:outline-slate-600 peer-disabled:bg-radio-btn-disabled peer-disabled:outline-slate-300"></span>

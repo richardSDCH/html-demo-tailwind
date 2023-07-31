@@ -86,8 +86,27 @@
 
                                 <div id="parameters--row2" class="row-start-2 col-span-9 flex items-start border border-rose-800">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Product</h6>
-                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                        <h6 class="text-sm mb-1 ml-6">Currency</h6>
+                                        <select name="currencies" id="currencies" class="h-10 w-24 ml-6 text-sm bg-white rounded-xl indent-2 appearance-none bg-arrow-down bg-no-repeat bg-3 bg-right-2 box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500">
+                                            <option value="USD">USD</option>
+                                            <option value="EUR">EUR</option>
+                                            <option value="GBP">GBP</option>
+                                            <option value="FOB">FOB</option>
+                                            <option value="JPY">JPY</option>
+                                            <option value="CNY">CNY</option>
+                                            <option value="CHF">CHF</option>
+                                            <option value="SGD">SGD</option>
+                                            <option value="CAD">CAD</option>
+                                            <option value="AUD">AUD</option>
+                                            <option value="INP">INP</option>
+                                            <option value="ILS">ILS</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-6">Total price</h6>
+                                        <div class="h-10 flex items-center ml-6">
+                                            <h4 class="text-lg font-medium">0.00</h4>
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="radio-btns--row2" class="row-start-2 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
@@ -103,22 +122,8 @@
                                 
                                 <div id="parameters--row3" class="row-start-3 col-span-9 flex items-start border border-rose-800">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Quantity</h6>
-                                        <input type="number" class="w-24 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0">
-                                    </div>
-                                    <div>
-                                        <h6 class="text-sm mb-1 ml-14">Units</h6>
-                                        <select name="units" id="units" class="h-10 w-24 ml-12 text-sm bg-white rounded-xl indent-2 appearance-none bg-arrow-down bg-no-repeat bg-3 bg-right-2 box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500">
-                                            <option value="kgs">kgs</option>
-                                            <option value="lbs">lbs</option>
-                                            <option value="tns">tns</option>
-                                            <option value="bags">bags</option>
-                                            <option value="liters">liters</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <h6 class="text-sm mb-1 ml-14">Tolerance %</h6>
-                                        <input type="number" class="w-24 h-10 rounded-xl ml-12 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0">
+                                        <h6 class="text-sm mb-1 ml-6">Unit price</h6>
+                                        <input type="number" class="w-36 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0.00">
                                     </div>
                                 </div>
                                 <div id="radio-btns--row3" class="row-start-3 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
@@ -134,8 +139,8 @@
                                 
                                 <div id="parameters--row4" class="row-start-4 col-span-9 flex items-start border border-rose-800">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Packaging</h6>
-                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                        <h6 class="text-sm mb-1 ml-6">Transport & Logistics</h6>
+                                        <input type="number" class="w-36 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0.00">
                                     </div>
                                 </div>
                                 <div id="radio-btns--row4" class="row-start-4 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
@@ -150,16 +155,9 @@
                                 </div>
                                 
                                 <div id="parameters--row5" class="row-start-5 col-span-9 flex items-center border border-rose-800">
-                                    <h6 class="text-sm mb-1 ml-6">Inspection required</h6>
-                                    <div id="toggle-switch" class="w-40 h-9/10 ml-8 flex justify-evenly items-center">
-                                        <h3 class="font-semibold text-base">NO</h3>
-                                        <label class="relative inline-block w-9 h-5 border-2 border-slate-400 rounded-2xl">
-                                            <input type="checkbox" class="opacity-0 w-0 h-0 peer">
-                                            <span class="absolute cursor-pointer top-0 bottom-0 left-0 right-0 bg-orangered rounded-3xl duration-300 
-                                                    before:absolute before:content-[''] before:w-4 before:h-4 before:left-0 before:bottom-0 before:bg-white before:rounded-full before:duration-300
-                                                    peer-checked:bg-teal-500 peer-checked:before:translate-x-4"></span>
-                                        </label>
-                                        <h3 class="font-semibold text-base">YES</h3>
+                                    <div>
+                                        <h6 class="text-sm mb-1 ml-6">Insurance</h6>
+                                        <input type="number" class="w-36 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0.00">
                                     </div>
                                 </div>
                                 <div id="radio-btns--row5" class="row-start-5 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
@@ -175,8 +173,8 @@
                                 
                                 <div id="parameters--row6" class="row-start-6 col-span-9 border border-rose-800">
                                     <div>
-                                        <h6 class="text-sm mb-1 ml-6">Other specifications</h6>
-                                        <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+                                        <h6 class="text-sm mb-1 ml-6">Duties / Tariffs</h6>
+                                        <input type="number" class="w-36 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400" placeholder="0.00">
                                     </div>
                                 </div>
                                 <div id="radio-btns--row6" class="row-start-6 col-start-10 col-span-3 flex justify-evenly items-center border border-teal-500">
