@@ -41,6 +41,7 @@ module.exports = {
         'supplier': '#0091A2',
         'customer': '#FFAD00',
         'orangered': '#ff4500',
+        'light-blue': '#0DA8FD',
       },
       backgroundColor: {
         'btn-default': 'rgba(0, 208, 215, 0.4)',

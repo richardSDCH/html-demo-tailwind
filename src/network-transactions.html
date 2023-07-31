@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Demo with Tailwind</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="grid grid-cols-12 grid-rows-9 gap-1.5 w-screen h-screen">
+        <div id="sidebar" class="fixed w-1/5">
+            <div id="tradeledge-logo" class="ml-8 mt-6">
+                <img class="w-40" src="./images/Tradeledge_logo_lightBackground.png" alt="logo">
+            </div>
+            <div id="menu-section" class="ml-16 mt-10">
+                <a href="#">
+                    <div class="group flex h-12 w-8/12">
+                        <div class="w-7 h-7 bg-no-repeat bg-left-top bg-contain bg-home group-hover:bg-home-hover"></div>
+                        <div class="ml-4 text-gray-400 pt-0.5 group-hover:text-black">Home</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group flex h-12 w-8/12">
+                        <div class="w-7 h-7 bg-no-repeat bg-left-top bg-contain bg-search group-hover:bg-search-hover"></div>
+                        <div class="ml-4 text-gray-400 pt-0.5 group-hover:text-black">Search</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group flex h-12 w-8/12">
+                        <div class="w-7 h-7 bg-no-repeat bg-left-top bg-contain bg-network group-hover:bg-network-hover"></div>
+                        <div class="ml-4 text-gray-400 pt-0.5 group-hover:text-black">Network</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group flex h-12 w-8/12">
+                        <div class="w-7 h-7 bg-no-repeat bg-left-top bg-contain bg-trade group-hover:bg-trade-hover"></div>
+                        <div class="ml-4 text-gray-400 pt-0.5 group-hover:text-black">Trade</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group flex h-12 w-8/12">
+                        <div class="w-7 h-7 bg-no-repeat bg-left-top bg-contain bg-manage group-hover:bg-manage-hover"></div>
+                        <div class="ml-4 text-gray-400 pt-0.5 group-hover:text-black">Manage</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navbar" class="row-start-1 row-end-2 col-start-3 col-end-13 flex justify-end">
+                <div id="nav-items" class="w-2/5 flex justify-end items-center">
+                    <div id="ellipse" class="flex w-10 h-10 bg-slate-100 rounded-full"><img src="./images/Bell.png" alt="Bell icon"></div>
+                    <img id="nav-firm-logo" class="w-10 h-10 rounded-full ml-10 border border-solid border-slate-500" src="./images/logo-coffee-company-2.png" alt="logo">
+                    <button class="ml-5 mr-5 bg-arrow-down w-52 h-12 rounded-xl text-left indent-4 bg-no-repeat bg-right-2 bg-4 hover:bg-slate-100" id="profile-menu-btn">Johannes Schwarz</button>
+                </div>
+        </div>
+        <div id="network-space--transactions" class="row-start-2 row-end-10 col-start-3 col-end-13">
+            <div id="working-space" class="grid grid-cols-10 grid-rows-8 gap-1.5 w-full h-full">
+                <div id="heading" class="row-start-1 row-end-3 col-span-9 flex justify-evenly items-center">
+                    <div class="flex flex-col items-center">
+                        <img src="./images/Rockbern.png" alt="logo" class="w-20 h-20 rounded-full border border-slate-500">
+                        <h4 class="font-medium mt-1">Rockbern Coffee Ltd</h4>
+                    </div>
+                    <div id="indicator-card--negotiating" class="w-36 h-28 bg-slate-100 rounded-xl flex flex-col items-center">
+                        <div id="indicator-card__blank" class="h-1/3"></div>
+                        <div id="indicator-card__num" class="h-1/3 w-8/12 text-xl font-bold flex items-center">2</div>
+                        <div id="indicator-card__name" class="h-1/3 w-8/12 font-medium text-negotiating">Negotiating</div>
+                    </div>
+                    <div id="indicator-card--executing" class="w-36 h-28 bg-slate-100 rounded-xl flex flex-col items-center">
+                        <div id="indicator-card__blank" class="h-1/3"></div>
+                        <div id="indicator-card__num" class="h-1/3 w-8/12 text-xl font-bold flex items-center">1</div>
+                        <div id="indicator-card__name" class="h-1/3 w-8/12 font-medium text-executing">Executing</div>
+                    </div>
+                    <div id="indicator-card--completed" class="w-36 h-28 bg-slate-100 rounded-xl flex flex-col items-center">
+                        <div id="indicator-card__blank" class="h-1/3"></div>
+                        <div id="indicator-card__num" class="h-1/3 w-8/12 text-xl font-bold flex items-center">3</div>
+                        <div id="indicator-card__name" class="h-1/3 w-8/12 font-medium text-completed">Completed</div>
+                    </div>
+                    <div id="indicator-card--volume" class="w-36 h-28 bg-slate-100 rounded-xl flex flex-col items-center">
+                        <div id="indicator-card__blank" class="h-1/3"></div>
+                        <div id="indicator-card__num" class="h-1/3 w-8/12 font-semibold flex items-center">$72,295.00</div>
+                        <div id="indicator-card__name" class="h-1/3 w-8/12 font-medium">Volume</div>
+                    </div>
+                </div>
+                <div id="working-space-body" class="row-start-3 row-end-9 col-span-10">
+                    <h3 id="info-title" class="font-semibold text-xl ml-20 mt-4">Transactions</h3>
+                    <div id="list-of-transactions" class="w-10/12 h-5/6 ml-20 mt-4 border-t border-slate-400 overflow-scroll">
+                        <a href="#" id="item" class="w-223 h-16 mt-6 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
+                            <div id="date" class="col-span-3 flex items-center indent-12 text-executing">10/06/2023</div>
+                            <div id="product" class="col-span-2 flex items-center">Cocoa beans</div>
+                            <div id="incoterm" class="col-span-2 flex items-center justify-center">FOB</div>
+                            <div id="price" class="col-span-2 flex items-center">$1,375.00</div>
+                            <div id="payment-terms" class="col-span-3 flex items-center">Open Account</div>
+                        </a>
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
+                            <div id="date" class="col-span-3 flex items-center indent-12 text-negotiating">05/06/2023</div>
+                            <div id="product" class="col-span-2 flex items-center">Coffee beans</div>
+                            <div id="incoterm" class="col-span-2 flex items-center justify-center">FOB</div>
+                            <div id="price" class="col-span-2 flex items-center">$5,420.00</div>
+                            <div id="payment-terms" class="col-span-3 flex items-center">Open Account</div>
+                        </a>
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
+                            <div id="date" class="col-span-3 flex items-center indent-12 text-negotiating">25/05/2023</div>
+                            <div id="product" class="col-span-2 flex items-center">Cinnamon</div>
+                            <div id="incoterm" class="col-span-2 flex items-center justify-center">CIF</div>
+                            <div id="price" class="col-span-2 flex items-center">$20,021.00</div>
+                            <div id="payment-terms" class="col-span-3 flex items-center">Letter of Credit</div>
+                        </a>
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
+                            <div id="date" class="col-span-3 flex items-center indent-12 text-completed">18/05/2023</div>
+                            <div id="product" class="col-span-2 flex items-center">Rice - Basmati</div>
+                            <div id="incoterm" class="col-span-2 flex items-center justify-center">FOB</div>
+                            <div id="price" class="col-span-2 flex items-center">$18,000.00</div>
+                            <div id="payment-terms" class="col-span-3 flex items-center">Standby Letter of Credit</div>
+                        </a>
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
+                            <div id="date" class="col-span-3 flex items-center indent-12 text-completed">24/04/2023</div>
+                            <div id="product" class="col-span-2 flex items-center">Cinnamon</div>
+                            <div id="incoterm" class="col-span-2 flex items-center justify-center">FOB</div>
+                            <div id="price" class="col-span-2 flex items-center">$12,175.00</div>
+                            <div id="payment-terms" class="col-span-3 flex items-center">Documentary Collection</div>
+                        </a>
+                        <a href="#" id="item" class="w-223 h-16 mb-1 ml-0.5 grid grid-cols-12 rounded-xl box-border hover:bg-slate-100 active:w-224 active:ml-0 active:border-2 border-black">
+                            <div id="date" class="col-span-3 flex items-center indent-12 text-completed">18/01/2023</div>
+                            <div id="product" class="col-span-2 flex items-center">Tea - Black</div>
+                            <div id="incoterm" class="col-span-2 flex items-center justify-center">FCA</div>
+                            <div id="price" class="col-span-2 flex items-center">$15,225.00</div>
+                            <div id="payment-terms" class="col-span-3 flex items-center">Payment in Advance</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
