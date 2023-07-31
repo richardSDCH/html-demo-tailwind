@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Demo with Tailwind</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-100">
+    <div class="grid grid-cols-12 grid-rows-9 gap-1.5 w-screen h-screen">
+        <div class="col-start-5 col-span-4 row-start-2 row-span-6 flex flex-col items-center">
+            <img src="./images/icon_lightBackground.png" alt="tradeledge-icon" class="w-14 h-28">
+            <div>
+                <h6 class="text-sm mt-8 mb-1 ml-6">Enter your registered email</h6>
+                <input type="text" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+            </div>
+            <div>
+                <h6 class="text-sm mt-8 mb-1 ml-6">Enter your pasword</h6>
+                <input type="password" class="w-96 h-10 rounded-xl ml-6 indent-3 font-light box-border outline outline-1 outline-slate-300 hover:outline-1 hover:outline-slate-500 focus:outline focus:outline-2 focus:outline-teal-400">
+            </div>
+            <button class="h-10 w-40 mt-8 bg-btn-default rounded-3xl hover:bg-btn-hover active:bg-btn-active">Log in</button>
+            <a href="#" class="mt-4 w-full font-medium text-end underline text-blue-600 hover:text-blue-900">Forgot password?</a>
+        </div>
+    </div>
+</body>
+</html>

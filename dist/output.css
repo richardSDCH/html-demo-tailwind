@@ -617,8 +617,20 @@ input[type='number']::-webkit-outer-spin-button,
   grid-column-start: 3;
 }
 
+.col-start-5 {
+  grid-column-start: 5;
+}
+
 .col-end-13 {
   grid-column-end: 13;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-span-6 {
+  grid-row: span 6 / span 6;
 }
 
 .row-start-1 {
@@ -745,6 +757,10 @@ input[type='number']::-webkit-outer-spin-button,
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -831,6 +847,14 @@ input[type='number']::-webkit-outer-spin-button,
 
 .h-screen {
   height: 100vh;
+}
+
+.h-1\/4 {
+  height: 25%;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .w-0 {
@@ -943,6 +967,18 @@ input[type='number']::-webkit-outer-spin-button,
 
 .w-screen {
   width: 100vw;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .cursor-pointer {
@@ -1134,6 +1170,16 @@ input[type='number']::-webkit-outer-spin-button,
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-teal-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 118 110 / var(--tw-border-opacity));
+}
+
+.border-teal-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(45 212 191 / var(--tw-border-opacity));
+}
+
 .bg-blue-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
@@ -1262,6 +1308,10 @@ input[type='number']::-webkit-outer-spin-button,
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .indent-12 {
   text-indent: 3rem;
 }
@@ -1361,6 +1411,15 @@ input[type='number']::-webkit-outer-spin-button,
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-0 {
@@ -1481,6 +1540,11 @@ input[type='number']::-webkit-outer-spin-button,
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .hover\:outline:hover {
